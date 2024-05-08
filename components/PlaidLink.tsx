@@ -4,7 +4,7 @@ import {
   usePlaidLink,
 } from 'react-plaid-link';
 import { Button } from './ui/button';
-import { use, useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   createLinkToken,

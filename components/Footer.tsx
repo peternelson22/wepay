@@ -11,13 +11,13 @@ const Footer = ({ user, type = 'desktop' }: FooterProps) => {
   return (
     <footer className='footer'>
       <div className={type === 'mobile' ? 'footer_name-mobile' : 'footer_name'}>
-        <p>{user?.name[0]}</p>
+        <p>{user?.firstName[0]}</p>
       </div>
       <div
         className={type === 'mobile' ? 'footer_email-mobile' : 'footer_email'}
       >
         <h1 className='text-14 font-semibold text-gray-700 truncate'>
-          {user?.name}
+          {user?.firstName}
         </h1>
         <p className='truncate font-normal text-gray-600'>{user?.email}</p>
       </div>
